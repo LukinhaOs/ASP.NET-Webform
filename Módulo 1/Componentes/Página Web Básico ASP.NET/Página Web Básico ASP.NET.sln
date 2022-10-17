@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Página Web Básico ASP.NET", "Página Web Básico ASP.NET\Página Web Básico ASP.NET.csproj", "{68098C3E-1EB0-48B3-B3A1-3DF447BC4D20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68098C3E-1EB0-48B3-B3A1-3DF447BC4D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68098C3E-1EB0-48B3-B3A1-3DF447BC4D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68098C3E-1EB0-48B3-B3A1-3DF447BC4D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68098C3E-1EB0-48B3-B3A1-3DF447BC4D20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E39C0D0-7971-492B-9FE1-D0666DFFCBCD}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropDownList e ListBox", "DropDownList e ListBox\DropDownList e ListBox.csproj", "{5334196A-8193-4D4E-86BD-A929DC57C54B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5334196A-8193-4D4E-86BD-A929DC57C54B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5334196A-8193-4D4E-86BD-A929DC57C54B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5334196A-8193-4D4E-86BD-A929DC57C54B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5334196A-8193-4D4E-86BD-A929DC57C54B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48393163-3E67-46ED-A293-CC91989522C8}
+	EndGlobalSection
+EndGlobal

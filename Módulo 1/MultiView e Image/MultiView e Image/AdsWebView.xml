@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/Imagens/img1.png</ImageUrl>
+		<height>60</height>
+		<width>190</width>
+		<NavigateUrl>https://www.pixilart.com/draw</NavigateUrl>
+		<AlternateText>Microsoft Main Site</AlternateText>
+		<Impressions>80</Impressions>
+		<Keyword>Topic1</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Imagens/poster.png</ImageUrl>
+		<height>90</height>
+		<width>90</width>
+		<NavigateUrl>https://www.pixilart.com</NavigateUrl>
+		<AlternateText>Wingtip Toys</AlternateText>
+		<Impressions>80</Impressions>
+		<Keyword>Topic2</Keyword>
+	</Ad>
+</Advertisements>

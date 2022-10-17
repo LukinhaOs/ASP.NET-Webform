@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="wfPaginaMestre.master.cs" Inherits="WebPágina.wfPaginaMestre" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Página Master & Banco de Dados</title>
+
+    <style>
+
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            margin: 0px;
+        }
+
+        #menu{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            width: 320px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        #navInicio, #navUsuario, #navContato, #navSair {
+            background-color: lightskyblue;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: bolder; color: white; 
+        }
+
+        #paginaUsuarios, #paginaContatos, #dadosContatos{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            background-color: lightskyblue;
+            height: auto;
+            border-radius: 8px;
+            margin-left: 350px;
+            margin-right: 350px;
+            padding: 30px;
+        }
+
+        #conteudoInicio {
+            margin-left: 350px;
+            margin-right: 350px;
+            background-color: lightskyblue;
+            color: white;
+            height: 380px;
+            border-radius: 8px;
+        }
+
+        img{
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        #fundoImagem{
+            background-color: white;
+            padding: 8px;
+            border-radius: 8px;
+            height: 275px; width: 450px;
+        }
+
+        #fundoImagemB {
+            display: flex; justify-content: center;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        footer{
+            height: 70px;
+            margin-top: 128px;
+            background-color: gray;
+        }
+
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h1 style="text-align: center;">Página Master WebForms & Banco de Dados</h1>
+        </header>
+        <nav>
+            <div id="menu">
+                <div id="navInicio">
+                    <a href="wfIndexInicio.aspx">Inicio</a>
+                </div>
+                <div id="navUsuario">
+                    <a href="wfUsuarios.aspx">Usuários</a>
+                </div>
+                <div id="navContato">
+                    <a href="wfContatos.aspx">Contato</a>
+                </div>
+                <div id="navSair">
+                    <a href="wfLogin.aspx">Sair</a>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </section>
+        <footer>
+            <h4 style="top: 15px; position: relative; color: white;">&Copy; | WebForm Development by Lucas</h4>
+        </footer>
+    </form>
+</body>
+</html>
