@@ -14,11 +14,9 @@
         }
 
         #paginaLogin {
+            display: flex;
             color: white;
             font-weight: bold;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
             margin-top: 10px;
             background-color: midnightblue;
             height: auto;
@@ -28,15 +26,44 @@
             padding: 30px;
         }
 
+        #loginMensagem {
+            position: relative;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: midnightblue;
+            margin-left: 550px;
+            margin-right: 550px;
+        }
+
         #labelMensagem {
             color: white;
             font-weight: bold;
         }
 
-        #boxLogin, #boxSenha {
-            padding: 3px;
+        #boxLogin, #boxSenha, #buttonLogin {
+            margin-top: 7px;
+            color: midnightblue;
+            text-align: center;
+            width: 170px;
+            padding: 4px;
             border-radius: 8px;
             border: none;
+            margin-right: 50px;
+        }
+
+        #infoLogin, #dadoLogin {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            margin: 5px;
+        }
+
+        #login, #senha {
+            border-radius: 8px;
+            width: 120px;
+            position: relative;
+            margin-top: 8px;
+            left: 25px;
         }
     </style>
 
@@ -45,20 +72,22 @@
     <form id="form1" runat="server">
         <h1>WebPage & Banco de Dados</h1>
         <div id="paginaLogin">
-            <div style="margin-right: 20px;">
-                Login:
-                <asp:TextBox ID="boxLogin" runat="server" style="text-align: center;" placeholder="Digite o seu e-mail"></asp:TextBox>
+            <div id="infoLogin">
+                <div id="login">
+                    Login:
+                </div>
+                <div id="senha">
+                    Senha:
+                </div>
             </div>
-            <div style="margin-right: 25px; margin-top: 10px;">
-                Senha:
-                <asp:TextBox ID="boxSenha" runat="server" style="text-align: center;" placeholder="Digite a sua senha" TextMode="Password"></asp:TextBox>
+            <div id="dadoLogin">
+                <asp:TextBox ID="boxLogin" runat="server" placeholder="Digite o seu e-mail"></asp:TextBox>
+                <asp:TextBox ID="boxSenha" runat="server" placeholder="Digite a sua senha" TextMode="Password"></asp:TextBox>
+                <asp:Button ID="buttonLogin" Style="cursor: pointer; position: relative; left: 4px; margin-top: 20px;" runat="server" Text="Acessar" OnClick="buttonLogin_Click" />
             </div>
-            <div style="margin-top: 20px;">
-                <asp:Button ID="buttonLogin" Style="border: none; border-radius: 8px; cursor: pointer; padding: 5px; font-weight: bold; width: 100px; background-color: white; color: Highlight;" runat="server" Text="Acessar" OnClick="buttonLogin_Click" />
-            </div>
-            <div id="loginMensagem" style="margin-top: 30px; font-weight: bold; color: white;">
-                <asp:Label ID="labelMensagem" runat="server" Text=""></asp:Label>
-            </div>
+        </div>
+        <div id="loginMensagem" style="margin-top: 30px;">
+            <asp:Label ID="labelMensagem" runat="server" Text=""></asp:Label>
         </div>
 
         <footer>
