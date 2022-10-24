@@ -1,0 +1,109 @@
+﻿body {
+    font: normal 15px Arial;
+    margin: 0px;
+}
+
+#logo {
+    height: 150px;
+    width: 150px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: Highlight;
+}
+
+#conteudoCategoria {
+    color: dodgerblue;
+    height: auto;
+    background-color: dimgray;
+}
+
+#sectionCategoria {
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    height: auto;
+    width: auto;
+    background-color: white;
+}
+
+#conteudoPrincipal {
+    background-color: dimgray;
+    margin: 20px;
+    padding: 20px;
+}
+
+nav {
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    height: 100px;
+    background-color: white;
+}
+
+.botaoHeader {
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+    padding: 15px;
+    background-color: Highlight;
+    text-decoration: none;
+}
+
+#itemCategoria3, #itemCategoria4 {
+    position: relative;
+    margin-top: 15px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 18px;
+    height: 68px;
+    background-color: dimgray;
+    margin-top: 32%
+}
+
+.mensagemCategoriaPositiva {
+    background-color: forestgreen;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.mensagemCategoriaNegativa {
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+#personalizarItem1 {
+    margin: 10px;
+}
+
+.buttonCCancelar, .buttonCInserir {
+    color: Highlight;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonCAlterar {
+    color: orangered;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

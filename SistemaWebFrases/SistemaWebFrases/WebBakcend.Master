@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebBakcend.master.cs" Inherits="SistemaWebFrases.WebBakcend" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Web Site Backend</title>
+    <link rel="stylesheet" href="CSS/web_all.css" />
+    <link rel="stylesheet" href="CSS/home.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <img id="logo" src="Imagens/Sistema/logobackend.png" />
+            <nav>
+                <h1 style="color: Highlight; position: relative; top: -10px; left: 5px;">Web Site Back-End & SQL</h1>
+                <asp:HyperLink ID="botaoHome" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfDefault.aspx">HOME</asp:HyperLink>
+                <asp:HyperLink ID="botaoUsuario" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfDefault.aspx">USUÁRIO</asp:HyperLink>
+                <asp:HyperLink ID="botaoAutores" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfDefault.aspx">AUTORES</asp:HyperLink>
+                <asp:HyperLink ID="botaoFrases" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfDefault.aspx">FRASES</asp:HyperLink>
+                <asp:HyperLink ID="botaoCategoria" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfCategoria.aspx">CATEGORIAS</asp:HyperLink>
+                <asp:HyperLink ID="botaoSair" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfCategoria.aspx">SAIR</asp:HyperLink>
+
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div id="conteudoPrincipal">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p style="font-size: 13px;">Web Back-End | Frases - Site voltado para o administrador do sistema</p>
+            <p>Development by Lucas | Praticando Sistemas Backend & SQL + ASP.NET</p>
+        </footer>
+    </form>
+</body>
+</html>
