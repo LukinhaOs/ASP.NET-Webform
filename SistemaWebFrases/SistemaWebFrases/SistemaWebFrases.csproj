@@ -71,15 +71,22 @@
     <Content Include="App_Data\DataBaseBackend_log.ldf">
       <DependentUpon>DataBaseBackend.mdf</DependentUpon>
     </Content>
-    <Content Include="CSS\home.css" />
     <Content Include="CSS\web_all.css" />
     <Content Include="Imagens\Sistema\logobackend.png" />
+    <Content Include="Imagens\Sistema\webFrases_logo.png" />
     <Content Include="Web.config" />
+    <Content Include="wfAutor.aspx" />
     <Content Include="wfCategoria.aspx" />
     <Content Include="wfDefault.aspx" />
+    <Content Include="wfFrases.aspx" />
+    <Content Include="wfLogin.aspx" />
+    <Content Include="wfUsuarios.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DATABASE\ConexaoAutor.cs" />
     <Compile Include="DATABASE\ConexaoCategoria.cs" />
+    <Compile Include="DATABASE\ConexaoFrases.cs" />
+    <Compile Include="DATABASE\ConexaoUsuario.cs" />
     <Compile Include="Modelo\ModeloAutor.cs" />
     <Compile Include="Modelo\ModeloCategoria.cs" />
     <Compile Include="Modelo\ModeloFrase.cs" />
@@ -91,6 +98,13 @@
     </Compile>
     <Compile Include="WebBakcend.Master.designer.cs">
       <DependentUpon>WebBakcend.Master</DependentUpon>
+    </Compile>
+    <Compile Include="wfAutor.aspx.cs">
+      <DependentUpon>wfAutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfAutor.aspx.designer.cs">
+      <DependentUpon>wfAutor.aspx</DependentUpon>
     </Compile>
     <Compile Include="wfCategoria.aspx.cs">
       <DependentUpon>wfCategoria.aspx</DependentUpon>
@@ -105,6 +119,27 @@
     </Compile>
     <Compile Include="wfDefault.aspx.designer.cs">
       <DependentUpon>wfDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfFrases.aspx.cs">
+      <DependentUpon>wfFrases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfFrases.aspx.designer.cs">
+      <DependentUpon>wfFrases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfLogin.aspx.cs">
+      <DependentUpon>wfLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfLogin.aspx.designer.cs">
+      <DependentUpon>wfLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfUsuarios.aspx.cs">
+      <DependentUpon>wfUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfUsuarios.aspx.designer.cs">
+      <DependentUpon>wfUsuarios.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

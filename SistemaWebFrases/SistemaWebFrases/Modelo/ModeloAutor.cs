@@ -7,8 +7,15 @@ namespace SistemaWebFrases.Modelo
 {
     public class ModeloAutor
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public String Nome { get; set; }
         public String Foto { get; set; }
+
+        public ModeloAutor()
+        {
+            Id = 0;
+            Nome = "";
+            Foto = "";
+        }
     }
 }

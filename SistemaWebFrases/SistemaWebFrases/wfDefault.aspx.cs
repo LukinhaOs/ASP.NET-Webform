@@ -11,7 +11,12 @@ namespace SistemaWebFrases
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["email"] != null)
+            {
+                homeNomeLabel.Text = Session["nome"].ToString();
+                homeEmailLabel.Text = Session["email"].ToString();
+            }
+         
         }
     }
 }

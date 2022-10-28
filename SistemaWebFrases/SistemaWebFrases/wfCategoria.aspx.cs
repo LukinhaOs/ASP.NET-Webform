@@ -37,23 +37,35 @@ namespace SistemaWebFrases
             ConexaoCategoria data = new ConexaoCategoria();
             ModeloCategoria objeto = new ModeloCategoria();
             objeto.Nome = boxCategoria2.Text;
-            try
+
+            if (boxCategoria2.Text == "")
             {
-                if (buttonCInserir.Text == "Inserir")
-                {
-                    data.Inserir(objeto);
-                    mensagemCategoria1.Text = "Registro do item bem sucedido!";
-                    mensagemCategoria1.Visible = true;
-                }
-                this.LimparCampos();
-            }
-            catch (Exception)
-            {
-                //
-                mensagemCategoria2.Text = "Falha ao registrar. Por favor, tente novamente mais tarde!";
                 mensagemCategoria2.Visible = true;
+                mensagemCategoria2.Text = "Informe o nome da Categoria antes de Enviar!";
             }
-            AtualizarGrid();
+            else
+            {
+                mensagemCategoria2.Visible = false;
+                try
+                {
+                    if (buttonCInserir.Text == "Inserir")
+                    {
+                        data.Inserir(objeto);
+                        mensagemCategoria1.Text = "Registro do item bem sucedido!";
+                        mensagemCategoria1.Visible = true;
+                        mensagemCategoria2.Visible = false;
+                    }
+                    this.LimparCampos();
+                }
+                catch (Exception)
+                {
+                    mensagemCategoria2.Text = "Falha ao registrar. Por favor, tente novamente mais tarde!";
+                    mensagemCategoria2.Visible = true;
+                    mensagemCategoria1.Visible = false;
+                }
+                AtualizarGrid();
+            }
+
 
         }
 
@@ -67,6 +79,7 @@ namespace SistemaWebFrases
             data.Alterar(objeto);
             mensagemCategoria1.Text = "Registro Alterado com sucesso!!";
             mensagemCategoria1.Visible = true;
+            mensagemCategoria2.Visible = false;
             AtualizarGrid();
 
             this.LimparCampos();
@@ -76,15 +89,33 @@ namespace SistemaWebFrases
         {
             this.LimparCampos();
             AtualizarGrid();
+            mensagemCategoria1.Visible = false;
+            mensagemCategoria2.Visible = false;
         }
 
         protected void gridCategoria_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            AtualizarGrid();
-            int index = Convert.ToInt32(e.RowIndex);
-            int cod = Convert.ToInt32(gridCategoria.Rows[index].Cells[1].Text);
-            ConexaoCategoria data = new ConexaoCategoria();
-            data.Excluir(cod);
+
+            try
+            {
+                int index = Convert.ToInt32(e.RowIndex);
+                int cod = Convert.ToInt32(gridCategoria.Rows[index].Cells[1].Text);
+                ConexaoCategoria data = new ConexaoCategoria();
+                data.Excluir(cod);
+                AtualizarGrid();
+            }
+            catch (Exception)
+            {
+                mensagemCategoria1.Visible = true;
+                mensagemCategoria1.Text = "Ocorreu um erro. Por favor, tente novamente mais tarde!";
+            }
+            finally
+            {
+                mensagemCategoria1.Visible = true;
+                mensagemCategoria1.Text = "A exclusão do item foi realizada!!";
+                mensagemCategoria2.Visible = false;
+            }
+
         }
 
         protected void gridCategoria_SelectedIndexChanged(object sender, EventArgs e)

@@ -24,7 +24,7 @@
                     <asp:Label ID="mensagemCategoria1" CssClass="mensagemCategoriaPositiva" runat="server" Visible="False"></asp:Label><br />
                     <asp:Label ID="mensagemCategoria2" CssClass="mensagemCategoriaNegativa" runat="server" Visible="False"></asp:Label>
                 </div>
-                <asp:GridView ID="gridCategoria" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" OnRowDeleting="gridCategoria_RowDeleting" OnSelectedIndexChanged="gridCategoria_SelectedIndexChanged">
+                <asp:GridView ID="gridCategoria" CssClass="gridCategoria" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" OnRowDeleting="gridCategoria_RowDeleting" OnSelectedIndexChanged="gridCategoria_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:CommandField ShowSelectButton="True" />

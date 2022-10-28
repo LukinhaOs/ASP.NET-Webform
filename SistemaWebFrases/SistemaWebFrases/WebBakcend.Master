@@ -14,16 +14,15 @@
 <body>
     <form id="form1" runat="server">
         <header>
-            <img id="logo" src="Imagens/Sistema/logobackend.png" />
+            <img id="logo" style="height: 240px;" src="Imagens/Sistema/logobackend.png" />
             <nav>
                 <h1 style="color: Highlight; position: relative; top: -10px; left: 5px;">Web Site Back-End & SQL</h1>
                 <asp:HyperLink ID="botaoHome" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfDefault.aspx">HOME</asp:HyperLink>
-                <asp:HyperLink ID="botaoUsuario" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfDefault.aspx">USUÁRIO</asp:HyperLink>
-                <asp:HyperLink ID="botaoAutores" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfDefault.aspx">AUTORES</asp:HyperLink>
-                <asp:HyperLink ID="botaoFrases" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfDefault.aspx">FRASES</asp:HyperLink>
+                <asp:HyperLink ID="botaoUsuario" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfUsuarios.aspx">USUÁRIO</asp:HyperLink>
+                <asp:HyperLink ID="botaoAutores" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfAutor.aspx">AUTORES</asp:HyperLink>
+                <asp:HyperLink ID="botaoFrases" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfFrases.aspx">FRASES</asp:HyperLink>
                 <asp:HyperLink ID="botaoCategoria" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfCategoria.aspx">CATEGORIAS</asp:HyperLink>
-                <asp:HyperLink ID="botaoSair" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfCategoria.aspx">SAIR</asp:HyperLink>
-
+                <asp:HyperLink ID="botaoSair" CssClass="botaoHeader" runat="server" NavigateUrl="~/wfLogin.aspx">SAIR</asp:HyperLink>
             </nav>
         </header>
         <main>

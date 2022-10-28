@@ -9,18 +9,19 @@
 }
 
 header {
+    height: 240px;
     display: flex;
     flex-direction: row;
     background-color: Highlight;
 }
 
-#conteudoCategoria {
+#conteudoCategoria, #conteudoAutor {
     color: dodgerblue;
     height: auto;
     background-color: dimgray;
 }
 
-#sectionCategoria {
+#sectionCategoria, #sectionAutor {
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
@@ -36,13 +37,16 @@ header {
 }
 
 nav {
+    width: 650px;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-right: 400px;
     margin-top: 10px;
     padding: 15px;
+    margin-top: 50px;
     height: 100px;
     background-color: white;
 }
+
 
 .botaoHeader {
     border-radius: 5px;
@@ -54,7 +58,8 @@ nav {
     text-decoration: none;
 }
 
-#itemCategoria3, #itemCategoria4 {
+#itemCategoria3, #itemCategoria4, #itemAutor3, #itemAutor4, #itemAutorFoto, #itemUsuario3, #itemUsuario4, #itemFrases1, #itemFrases2
+#itemFrases3, #itemFrases4, #itemFrases5{
     position: relative;
     margin-top: 15px;
     height: auto;
@@ -78,23 +83,26 @@ footer {
     color: white;
 }
 
-.mensagemCategoriaNegativa {
-    background-color: red;
+.mensagemAutorPositiva {
+    background-color: Highlight;
     padding: 5px;
     border-radius: 5px;
     font-weight: bold;
     color: white;
 }
 
-#personalizarItem1 {
-    margin: 10px;
+.mensagemCategoriaNegativa, .mensagemAutorNegativa, .mensagemUsuarioNegativa {
+    background-color: orangered;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
 }
 
-.buttonCCancelar, .buttonCInserir {
+.buttonCCancelar, .buttonCInserir, .buttonCSalvar {
     color: Highlight;
     border: none;
     padding: 10px;
-    margin: 5px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -106,4 +114,116 @@ footer {
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 0px;
+}
+
+.uploadAutor{
+    color: white;
+    font-weight: bold;
+    background-color: Highlight;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.gridAutor, .gridCategoria {
+    margin-top: 10px;
+}
+
+#loginPreenchimento {
+    margin-top: 150px;
+}
+
+#loginConteudo {
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 130px;
+    background-color: darkgray;
+    margin: auto;
+    height: 400px;
+    width: 650px;
+}
+
+#logo {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    height: 320px;
+}
+
+#tituloLogo {
+    height: 320px;
+    width: auto;
+}
+
+#login {
+    background-color: Highlight;
+    margin-top: -140px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#boxLoginEmail, #boxLoginSenha {
+    width: 200px;
+    border: none;
+    height: 27px;
+    border-radius: 5px;
+    text-align: center;
+    color: forestgreen;
+}
+
+#loginButton {
+    margin-top: 20px;
+    width: 200px;
+    border: none;
+    height: 27px;
+    border-radius: 5px;
+    color: forestgreen;
+}
+
+#buttonDiv, #senhaDiv, #emailDiv {
+    margin: auto;
+    width: 200px;
+}
+
+#mensagemDiv {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#loginLabel {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+#homeDefault {
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    width: 260px;
+}
+
+#conteudoDefault {
+    text-align: center;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px; padding: 20px;
+    color: orange;
+    height: 400px;
+}
+
+.listFraseAutor, .listFraseCategoria {
+    width: 250px;
+}
+
+#mensagemFrases {
+    margin-top: 20px;
 }
